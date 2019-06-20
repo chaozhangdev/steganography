@@ -223,9 +223,17 @@ adding numbers are dramatically dropped. Divided 27 parts are consisted of
 is small, we can just add them into pixels and finish hiding characters from
 message into the image.
 
-![alt text](https://github.com/zzzchaozzz/Steganography/blob/master/README/3.png)
+Figure 3 - The original color:
 
-![alt text](https://github.com/zzzchaozzz/Steganography/blob/master/README/4.png)
+![alt text](https://github.com/zzzchaozzz/Steganography/blob/master/README/33.png)
+
+Figure 4 - By adding 100:
+
+![alt text](https://github.com/zzzchaozzz/Steganography/blob/master/README/44.png)
+
+Figure 5 - By adding 5:
+
+![alt text](https://github.com/zzzchaozzz/Steganography/blob/master/README/55.png)
 
 ## 6 Implementation
 
