@@ -141,7 +141,7 @@ a significant key role.
 
 ## 4 Steganography
 
-###4.1 Introduction to steganography
+### 4.1 Introduction to steganography
 
 Steganography is practical operation of concealing a file, message, image or
 video within other documents. The purpose of steganography is to hide one
@@ -151,7 +151,7 @@ encrypts the files which does not attract attention to itself as an object becau
 of hiding property. In our project, we generally discuss steganography
 related to image which can be thought as hiding data into image.
 
-###4.2 Steganography applications
+### 4.2 Steganography applications
 
 Most steganography applications are used for increasing security such as
 copyright control of materials and smart IDs. In addition, it can be used
@@ -160,18 +160,18 @@ trafic of practical users[4]. Steganography also can be used practically in
 daily life for message encryption. We can build a bridge between message
 and the image then generate a standard in data communication.
 
-4.3 Steganography methods
+### 4.3 Steganography methods
 
 There are many steganography methods nowadays. The classical one is to
 hide the message into boundaries of the image. For the reason human eye
 is hard to tell small differences between two images, we can add values of
 messages into four boundaries of the image, If the length of message is small,
-this steganography method works well due to its eciency and simpleness.
+this steganography method works well due to its eficiency and simpleness.
 However, it is not secure because it is so obvious to be checked once values in
 this image are analyzed. It is weird since values of background are changed
 only in boundary areas and that may cause the security of message. The
-other classical method is called least signicant bit steganography shown in
-Figure 2. It obtains binary values of message rstly and divides these binary
+other classical method is called least significant bit steganography shown in
+Figure 2. It obtains binary values of message firstly and divides these binary
 values into 4 parts then adds each two bits into the end of pixels values in
 the image. This is a good method but will modify the original a lot which
 also can be detected. Inspired by some steganography methods, we create
@@ -197,7 +197,7 @@ differences in saturation.
 ### 5.2 Color neutralization test
 
 We can use practical test examples to show comparing results of two color
-with same hue and dierences saturation[8]. In testing, we have an original
+with same hue and differences saturation[8]. In testing, we have an original
 color where r=40, g=80, b=140 shown in Figure 3. By adding a large number
 100 and a small number 5 into all three channels respectively. We have the
 results in Figure 4 and Figure 5. From the results, we can obtain that if we
@@ -274,10 +274,10 @@ top to bottom and from left to right, then we can have a new sorted array
 #### 6.2.3 Step 3: encryption
 
 For each character in plaintext, according to its assigned coordinate in sort key,
-we separate the value from 3 dimensions first which can be understood divid-
-ing the value into three parts. We use an array 'rgb' to store them. Further,
-we divide these three parts into 9 parts with respect to the pixel in corre-
-sponding coordinate and its 8 neighbors. Once we obtain 27 parts in total,
+we separate the value from 3 dimensions first which can be understood dividing 
+the value into three parts. We use an array 'rgb' to store them. Further,
+we divide these three parts into 9 parts with respect to the pixel in corresponding 
+coordinate and its 8 neighbors. Once we obtain 27 parts in total,
 we can add these small number into that pixel with its neighbors for all r,g,b
 dimensions. At last, the values in the original image is changed by adding
 ASCII values of all characters in plaintext.
@@ -303,7 +303,7 @@ translate them into character then we can obtain the plaintext.
 By comparing the original image and the ciphered image in Figure 7, we can
 not distinguish any difference only by human eyes and we may think that
 ciphered image is the original one. Even for machine, it is hard to detect
-if the image has been modied because we only change the values of some
+if the image has been modified because we only change the values of some
 pixels randomly and sightly. In addition, we only decrease the saturation of
 some pixels to a very small level without changing hue. Figure 8 confirms
 programming works well which can exactly recover the plaintext from the
@@ -315,8 +315,8 @@ ciphered image.
 
 ## 7 Conclusion
 
-In this project, we have discussed basic concepts of computer security, com-
-puter forensics and general operations of image processing with steganography. 
+In this project, we have discussed basic concepts of computer security, computer
+forensics and general operations of image processing with steganography. 
 Related to computer security, we generate a new algorithm in steganography
 which divides the value of each character in message into 27 small
 pieces and adds them together into the image. We also use programming
@@ -325,3 +325,29 @@ For future work, we need to improve the integrity of our code to be suitable
 for any message including some special invisible symbols. In addition, we
 need to compare it with other related algorithms to update some functions
 in order to increase its eficiency.
+
+### References
+[1] Hunt, R. W. G. (2005). The reproduction of colour. John Wiley & Sons.
+
+[2] Fridrich, J., Goljan, M., & Soukal, D. (2004, June). Searching for the
+stego-key. In Security, Steganography, and Watermarking of Multimedia
+Contents VI (Vol. 5306, pp. 70-83). International Society for Optics and
+Photonics.
+
+[3] Piva, A. (2013). An overview on image forensics. ISRN Signal Processing,
+2013.
+
+[4] Anderson, R. J., & Petitcolas, F. A. (1998). On the limits of steganogra-
+phy. IEEE Journal on selected areas in communications, 16(4), 474-481.
+
+[5] Cheddad, A., Condell, J., Curran, K., & Mc Kevitt, P. (2010). Digital
+image steganography: Survey and analysis of current methods. Signal
+processing, 90(3), 727-752.
+
+[6] Provos, N., & Honeyman, P. (2003). Hide and seek: An introduction to
+steganography. IEEE security & privacy, 99(3), 32-44.
+
+[7] RGB to HSV calculator: https://www.rapidtables.com/convert/color/rgb-to-hsl.html
+
+[8] RGB Calculator: https://www.w3schools.com/colors/colors_rgb.asp
+
